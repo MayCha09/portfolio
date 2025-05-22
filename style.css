@@ -421,34 +421,6 @@ article > div p {
   transform: translateY(4px);
 }
 
-/* Responsive เล็กลง */
-@media (max-width: 480px) {
-  #experience {
-    padding: 30px 15px;
-  }
-
-  .experience-sub-title {
-    font-size: 1.5rem;
-  }
-
-  article {
-    padding: 10px 12px;
-  }
-
-  article .icon {
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-  }
-
-  article > div h3 {
-    font-size: 1rem;
-  }
-
-  article > div p {
-    font-size: 0.85rem;
-  }
-}
 
 
 /* PROJECTS SECTION */
