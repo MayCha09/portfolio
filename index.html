@@ -3,338 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Chalinee Saelee - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <header>
       <nav id="desktop-nav">
-        <div class="logo">PORTFOLIO</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
-    <nav id="hamburger-nav">
-      <div class="logo">Chalinee Saelee</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li>
-            <a href="#about" onclick="toggleMenu()">About <Menu:t></Menu:t></a>
-          </li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+
+    <!-- Profile  -->
     <section id="profile">
-      <div class="section_pic-container">
-        <img src="./assets/Profile_img.jpg" alt="Chalinee" class="profile-1" />
-      </div>
-      <div class="section_text">
-        <p class="section_text_p1">Hello, I'm</p>
-        <h1 class="title">Chalinee Saelee</h1>
-        <!-- <p class="section_text_p2"></p> -->
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Resume_Chalinee_dev.pdf')"
-          >
-            Resume
-          </button>
-        
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="./assets/Profile_img.jpg" alt="Chalinee Saelee" />
+        </div>
+        <div class="profile-text">
+          <p class="greeting">Hi, I'm</p>
+          <h1 class="name">Chalinee Saelee</h1>
+          <h2 class="role">Frontend Developer</h2>
+          <p class="description">
+           I hold a Bachelor's degree in Computer Science with experience in both web and mobile development, encompassing front-end and back-end technologies. I focus on UI/UX design, creating intuitive and user-friendly interfaces. I am currently seeking opportunities to grow professionally, embrace new challenges, and further expand my skills.
+          </p>
+
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/chalinee-saelee-3b126431b/"
+              target="_blank"
+            >
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+            </a>
+            <a href="https://github.com/MayCha09/" target="_blank">
+              <img
+                src="./assets/github.png"
+                alt="GitHub icon"
+                class="icon contact-icon"
+              />
+            </a>
+          </div>
+
+          <div class="btn-group">
+            <button onclick="window.open('./assets/pdf/CV_Chalinee.pdf')">
+              Download CV
+            </button>
+          </div>
         </div>
       </div>
     </section>
+
     <section id="about">
-      <p class="section_text_p1">Get to Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section_pic-container">
-          <img
-            src="./assets/About.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Science Program in Computer Science</p>
-              <p>Kasetsart University Kamphaeng Saen Campus</p>
-              <p>GPAX : 3.43</p>
-            </div>
+      <h1 class="section-title">About Me</h1>
+      <div class="about-container">
+        <div class="about-left">
+          <h2>Education</h2>
+          <p>
+            Bachelor of Science Program in Computer Science<br />
+            Kasetsart University, Kamphaeng Saen Campus
+          </p>
+          <div class="quick-stats">
+            <div class="stat">GPAX: 3.43 / 4.00</div>
           </div>
-          <div class="text-container">
-            <p>
-              I hold a Bachelor's degree in Computer Science with knowledge in
-              both web and mobile development, covering front-end and back-end
-              technologies. I also have experience and great interest in UI/UX
-              design, focusing on creating intuitive interfaces and excellent
-              user experiences across platforms.
-            </p>
-            <p>
-              I am currently seeking opportunities in the Computer Science field
-              to continue learning, embrace new challenges, and further develop
-              my skills for future growth.
-            </p>
+        </div>
+
+        <div class="about-right">
+          <div class="personal-info">
+            <h2>Personal Info</h2>
+            <ul>
+              <li><strong>Date of Birth:</strong> April 9, 2002</li>
+              <li><strong>Place of Birth:</strong> Phetchaburi, Thailand</li>
+              <li><strong>Phone:</strong> +66 94-741-8121</li>
+              <li><strong>Email:</strong> chalinee.saelee@gmail.com</li>
+            </ul>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <!-- Programming Languages -->
-        <div class="about-containers">
-          <h2 class="experience-sub-title">Programming Languages</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>C</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Java</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Python</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Frontend -->
-        <div class="about-containers">
-          <h2 class="experience-sub-title">Frontend</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>React Native</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Vue.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Flutter</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Backend -->
-        <div class="about-containers">
-          <h2 class="experience-sub-title">Backend</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Node.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Django</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Database -->
-        <div class="about-containers">
-          <h2 class="experience-sub-title">Database</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MySQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="about-containers">
-          <h2 class="experience-sub-title">Tools</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Figma</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Android Studio</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Git</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
 
     <section id="projects">
-      <p class="section_text_p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="section-title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers-project">
+          <!-- Project 1 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -350,7 +113,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/MayCha09/Country-API'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
@@ -360,6 +123,8 @@
               </button>
             </div>
           </div>
+
+          <!-- Project 2 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -369,21 +134,23 @@
               />
             </div>
             <h2 class="experience-sub-titles project-title">Portfolio</h2>
+            <p class="section_text_p1">HTML/CSS</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MayCha09/portfolio'"
+                onclick="location.href='https://github.com/MayCha09/Veggie-Scanner'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://maycha09.github.io/portfolio/'"
+                onclick="location.href='#'"
               >
                 Live Demo
               </button>
             </div>
           </div>
+          <!-- Project 3 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -401,7 +168,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/MayCha09/Restaurant-Ordering'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
@@ -411,6 +178,8 @@
               </button>
             </div>
           </div>
+
+          <!-- Project 4 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -430,11 +199,13 @@
               </button>
             </div>
           </div>
+
+          <!-- Project 5 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/project-5.png"
-                alt="Project 4"
+                alt="Project 5"
                 class="project-img"
               />
             </div>
@@ -447,19 +218,15 @@
               >
                 Live Demo
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Health-Wallet.pdf')"
-              >
-                Download
-              </button>
             </div>
           </div>
+
+          <!-- Project 6 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/project-6.png"
-                alt="Project 4"
+                alt="Project 6"
                 class="project-img"
               />
             </div>
@@ -470,117 +237,205 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='hhttps://github.com/MayCha09/Sleep-Efficiency'"
+                onclick="location.href='https://github.com/MayCha09/Sleep-Efficiency'"
               >
-                Github
+                GitHub
               </button>
             </div>
           </div>
+
+          <!-- Project 7 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/project-7.jpg"
-                alt="Project 4"
+                alt="Project 7"
                 class="project-img"
               />
             </div>
+            <p class="section_text_p2">(Project Final)</p>
             <h2 class="experience-sub-titles project-title">
-              Mobile Application for Classifying Fruits and Vegetables using
-              Artificial Intelligence (Project Final)
+              Classifying Fruits and Vegetables using Artificial Intelligence
             </h2>
             <p class="section_text_p1">Flutter</p>
-              <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Fruits and Vegetables.pdf')"
-              >
-                Download
-              </button>
-            </div>
           </div>
+
+          <!-- Project 8 -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/project-8.jpg"
-                alt="Project 4"
+                alt="Project 8"
                 class="project-img"
               />
             </div>
+            <p class="section_text_p2">(Internship)</p>
             <h2 class="experience-sub-titles project-title">
-              Army Information Registration (Internship)
+              Army Information Registration
             </h2>
             <p class="section_text_p1">Flutter</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/ARMY INFORMATION REGISTRATION.pdf')"
-              >
-                Download
-              </button>
-            </div>
-          </div>
-        
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-
-        <section id="contact">
-          <p class="section_text_p1">Get in Touch</p>
-          <h1 class="title">Contact Me</h1>
-          <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-              <img
-                src="./assets/phone.png"
-                alt="Phone icon"
-                class="icon contact-icon"
-              />
-              <p><a>094-741-8121</a></p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <p>
-                <a href="mailto:examplemail@gmail.com"
-                  >chalinee.saelee@gmail.com</a
-                >
-              </p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
-              <p>
-                <a href="https://www.linkedin.com/in/chalinee-saelee-3b126431b/"
-                  >LinkedIn</a
-                >
-              </p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/github.png"
-                alt="Github icon"
-                class="icon contact-icon"
-              />
-              <p><a href="https://github.com/MayCha09/">Github</a></p>
-            </div>
-          </div>
-        </section>
-        <footer>
-          <p>&#169; 2024 Chalinee Saelee. All Rights Reserved.</p>
-        </footer>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="script.js"></script>
       </div>
     </section>
+
+    <section id="skills">
+      <h1 class="section-title">Skills</h1>
+
+      <!-- Programming Languages -->
+      <h2 class="skill-category-title">Programming Languages</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="./assets/icons/c.png" alt="C" class="skill-icon" />
+          <h3>C</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="./assets/icons/python.png"
+            alt="Python"
+            class="skill-icon"
+          />
+          <h3>Python</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/dart.png" alt="Dart" class="skill-icon" />
+          <h3>Dart</h3>
+          <p>Advanced</p>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/html.png" alt="HTML" class="skill-icon" />
+          <h3>HTML</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/css.png" alt="CSS" class="skill-icon" />
+          <h3>CSS</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="./assets/icons/javascript.png"
+            alt="JavaScript"
+            class="skill-icon"
+          />
+          <h3>JavaScript</h3>
+          <p>Basic</p>
+        </div>
+      </div>
+
+      <!--  Frameworks & Libraries -->
+      <h2 class="skill-category-title">Frameworks & Libraries</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img
+            src="./assets/icons/flutter.png"
+            alt="Flutter"
+            class="skill-icon"
+          />
+          <h3>Flutter</h3>
+          <p>Advanced</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="./assets/icons/react-native.png"
+            alt="React Native"
+            class="skill-icon"
+          />
+          <h3>React Native</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/vue.png" alt="Vue.js" class="skill-icon" />
+          <h3>Vue.js</h3>
+          <p>Basic</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="./assets/icons/nodejs.png"
+            alt="Node.js"
+            class="skill-icon"
+          />
+          <h3>Node.js</h3>
+          <p>Basic</p>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <h2 class="skill-category-title">Database</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="./assets/icons/mysql.png" alt="MySQL" class="skill-icon" />
+          <h3>MySQL</h3>
+          <p>Basic</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="./assets/icons/postgresql.png"
+            alt="PostgreSQL"
+            class="skill-icon"
+          />
+          <h3>PostgreSQL</h3>
+          <p>Intermediate</p>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <h2 class="skill-category-title">Tools</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="./assets/icons/figma.png" alt="Figma" class="skill-icon" />
+          <h3>Figma</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="./assets/icons/android-studio.png"
+            alt="Android Studio"
+            class="skill-icon"
+          />
+          <h3>Android Studio</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/git.png" alt="Git" class="skill-icon" />
+          <h3>Git</h3>
+          <p>Basic</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+66947418121">094-741-8121</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:chalinee.saelee@gmail.com"
+              >chalinee.saelee@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&#169; 2024 Chalinee Saelee. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
